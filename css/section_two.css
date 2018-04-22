@@ -1,0 +1,22 @@
+/* SECTION TWO */
+
+#sectionTwo > #sectionTwoText {
+    width: 50%;
+    text-align: start !important;
+    min-width: 300px;
+    margin: 30px auto;
+}
+
+#sectionTwo > #sectionTwoText * {
+    margin: 0;
+}
+
+
+#sectionTwo #secondSubheading {
+    color: #444;
+}
+
+
+#sectionTwo #secondText {
+    color: #aaa;
+}

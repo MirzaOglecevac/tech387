@@ -1,0 +1,111 @@
+/* SECTION SEVEN */
+
+#sectionSeven {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+#sectionSeven > div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'sans-serif', 'Roboto';
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    #sectionSeven {
+        height: 800px;
+        flex-direction: column;
+        margin: 0 !important;
+    }
+
+    #sectionSeven > div {
+        width: 100%;
+        height: 400px;
+    }
+
+}
+
+
+#sectionSeven > div:nth-child(2) {
+    background-color: #333;
+    min-width: 350px;
+}
+
+#sectionSeven > div:nth-child(2) > div {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#sectionSeven > div:nth-child(2) > div * {
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+#sectionSeven #form  {
+    min-width: 300px;
+}
+
+
+#sectionSeven #form > p:first-child {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#sectionSeven #form > p:nth-child(2) {
+    font-size: 14px;
+    padding: 0 5px;
+    color: #90A4AE;
+}
+
+#sectionSeven #form .textInput {
+    outline: none;
+    border: none;
+    padding: 5px 0;
+    margin: 10px auto;
+    font-size: 14px;
+    border-bottom: 1px solid #bbb;
+}
+
+#sectionSeven #form button {
+    margin: 0;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    border-radius: 1px;
+    padding: 5px;
+    color: #111;
+    min-width: 100px;
+    max-width: 150px;
+    font-family: 'sans-serif', 'Roboto';
+    background-color: #00E676;
+    box-shadow: 1px 2px 1px rgba(150,150,150, 0.6);
+    cursor: pointer;
+}
+
+
+#sectionSeven #form button:hover {
+    background-color: #00C853;
+}
+
+
+#sectionSeven #form button:active {
+    box-shadow: 1px -1px 1px rgba(150,150,150, 0.6);
+}
+
+#sectionSeven #message {
+    height: 80px;
+    resize: none;
+}

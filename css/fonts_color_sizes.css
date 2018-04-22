@@ -1,0 +1,75 @@
+
+.textOneDark {
+    font-family: sans-serif, 'Roboto Regular';
+    font-size: 34px !important;
+    color: #fff !important;
+    opacity: 1;
+}
+
+
+.textThreeDark {
+    font-family: sans-serif, 'Roboto Mono Regular';
+    font-size: 16px !important;
+    color: #fff !important;
+    opacity: 0.54;
+}
+
+
+.textFourDark {
+    font-family: sans-serif, 'Roboto Mono Regular';
+    font-size: 20px !important;
+    color: #fff !important;
+    opacity: 0.84;
+}
+
+
+
+.textOneLight {
+    font-family: sans-serif, 'Roboto Regular';
+    font-size: 34px !important;
+    color: #000 !important;
+    opacity: 0.84;
+}
+
+.textTwoLight {
+    font-family: sans-serif, 'Roboto Regular';
+    font-size: 20px !important;
+    color: #000 !important;
+    opacity: 0.84;
+}
+
+.textThreeLight {
+    font-family: sans-serif, 'Roboto Mono Regular';
+    font-size: 16px !important;
+    color: #000 !important;
+    opacity: 0.54;
+}
+
+.textFourLight {
+    font-family: sans-serif, 'Roboto Mono Regular';
+    font-size: 20px !important;
+    color: #000 !important;
+    opacity: 0.54;
+}
+
+.textFiveLight {
+    font-family: sans-serif, 'Roboto Medium';
+    font-size: 20px !important;
+    color: #000;
+    opacity: 0.84;
+}
+
+.buttonOne {
+    font-family: sans-serif, 'Roboto Medium';
+    font-size: 14px !important;
+    color: #000 !important;
+    opacity: 0.84;
+}
+
+.buttonTwo {
+    font-family: sans-serif, 'Roboto Medium';
+    font-size: 14px !important;
+    color: #000 !important;
+    opacity: 0.84;
+}
+

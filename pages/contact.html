@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+
+</head>
+<body>
+
+    <div id="contactContainer">
+
+        <!-- SECTION TWO -->
+        <div id="contactAboutUs">
+
+            <div class="section" id="sectionTwo">
+                <div id="sectionTwoText">
+                    <p class="heading data" id="secondHeading"> O nama </p>
+                    <p class="subheading data" id="secondSubheading"> Ključne vrijednosti
+                        istraživački duh, agilnost, zajedništvo, otvorenost, integritet, ambicioznost
+                    </p>
+                    <p class="text data" id="secondText">
+                        Tech 387 je kompanija koja je osnovana sa vizijom pravljenja najzahtjevnijih i ambicioznih softverskih projekata
+                        21. stoljeća i sa željom za zapošljavanjem najboljih profesionalaca u industriji...
+                    </p>
+                </div>
+            </div>
+
+            <!-- SECTION FOUR ABOUT -->
+            <div class="section" id="sectionFourA">
+                <div id="leftContainer">
+                    <div id="ourSocialLinks">
+                        <div>
+                            <span id="facebook" onclick="openLink(this)">
+                            <div class="icons" style="
+                                 width: 20px;
+                                 height: 20px;
+                                 background-color: #3B5998;
+                                 -webkit-mask-image: url('assets/facebook.svg');
+                                 -webkit-mask-size: 20px;">
+                            </div>
+                            FACEBOOK</span>
+
+
+                            <span id="medium" onclick="openLink(this)"><div class="icons" style="
+                                     width: 20px;
+                                     height: 20px;
+                                     background-color: #333;
+                                     -webkit-mask-image: url('assets/medium.svg');
+                                     -webkit-mask-size: 20px;">
+                         </div>MEDIUM</span>
+                        </div>
+
+                        <div>
+                            <span id="instagram" onclick="openLink(this)"><div class="icons" style="
+                                     width: 20px;
+                                     height: 20px;
+                                     background-color: #333;
+                                     -webkit-mask-image: url('assets/instagram.svg');
+                                     -webkit-mask-size: 20px;">
+                         </div>INSTAGRAM</span>
+
+                            <span id="linkedin" onclick="openLink(this)"><div class="icons" style="
+                                     width: 20px;
+                                     height: 20px;
+                                     background-color: #4875B4;
+                                     -webkit-mask-image: url('assets/linkedin.svg');
+                                     -webkit-mask-size: 20px;">
+                         </div>LINKED IN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- SECTION SEVEN C -->
+        <div class="section" id="sectionSevenC">
+            <div></div>
+            <div id="formContainer">
+                <div id="form">
+                    <p class="data"> Work with us </p>
+                    <p class="data"> Lorem ipsum</p>
+                    <input id="fullname" class="textInput data" type="text" placeholder="Full Name" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>
+                    <input id="email" class="textInput data" type="text" placeholder="Email" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>
+                    <input id="subject" class="textInput data" type="text" placeholder="Subject" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>
+                    <textarea id="message" class="textInput data" type="text" placeholder="Message" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"></textarea>
+                    <div>
+                        <button class="data" onclick="sendContactData()">Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        /**
+         * Opening social media links
+         * @param event
+         */
+        function openLink(event){
+            switch(event.id){
+                case 'facebook': window.open('https://www.facebook.com/tech387/','_blank'); break;
+                case 'medium': window.open('https://medium.com/@TECH387','_blank'); break;
+                case 'instagram': window.open('https://www.linkedin.com/company/tech-387','_blank'); break;
+                case 'linkedin': window.open('https://www.linkedin.com/company/tech-387','_blank');
+            }
+        }
+    </script>
+
+</body>
+</html>
