@@ -54,7 +54,7 @@
 }
 
 
-#sectionThreeAbout #mirza, #sectionThreeAbout #denis, #sectionThreeAbout #arslanH, #sectionThreeAbout #arslanD, #sectionThreeAbout #enver, #sectionThreeAbout #kreso, #sectionThreeAbout #rustem, #sectionThreeAbout #amar {
+#sectionThreeAbout #personOne, #sectionThreeAbout #personTwo, #sectionThreeAbout #personThree, #sectionThreeAbout #personFour, #sectionThreeAbout #personFive, #sectionThreeAbout #personSix, #sectionThreeAbout #personSeven, #sectionThreeAbout #personEight {
     width: 0;
 }
 
@@ -69,6 +69,11 @@
 }
 
 
+#sectionThreeAbout .imageContainer a:nth-child(2) {
+    position: relative;
+    left: 7px;
+    top: 3px;
+}
 
 
 #sectionThreeAbout > div  img {
