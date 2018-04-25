@@ -14,13 +14,12 @@
 
             <div class="section" id="sectionTwo">
                 <div id="sectionTwoText">
-                    <p class="heading data" id="secondHeading"> O nama </p>
-                    <p class="subheading data" id="secondSubheading"> Ključne vrijednosti
-                        istraživački duh, agilnost, zajedništvo, otvorenost, integritet, ambicioznost
+                    <p class="heading data" id="secondHeading"> About us </p>
+                    <p class="subheading data" id="secondSubheading">
+                        Our core values are ambition, unity, impartiality, integrity, flexibility, punctuality and a will to work and improve ourselves.
                     </p>
                     <p class="text data" id="secondText">
-                        Tech 387 je kompanija koja je osnovana sa vizijom pravljenja najzahtjevnijih i ambicioznih softverskih projekata
-                        21. stoljeća i sa željom za zapošljavanjem najboljih profesionalaca u industriji...
+                        Tech387 was founded with an ambition to develop the most demanding and ambitious software projects of the 21st century. The members of our team are young, creative and ambitious professionals whose motivated work approach inspires innovation and change.
                     </p>
                 </div>
             </div>
@@ -79,15 +78,41 @@
             <div></div>
             <div id="formContainer">
                 <div id="form">
-                    <p class="data"> Work with us </p>
-                    <p class="data"> Lorem ipsum</p>
-                    <input id="fullname" class="textInput data" type="text" placeholder="Full Name" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>
-                    <input id="email" class="textInput data" type="text" placeholder="Email" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>
-                    <input id="subject" class="textInput data" type="text" placeholder="Subject" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>
-                    <textarea id="message" class="textInput data" type="text" placeholder="Message" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"></textarea>
+
+                    <p class="data primary"> Let’s start our work relationship </p>
+                    <p class="data primary"> Leave A Message </p>
+
+                    <br/>
+                    <form class="primary">
+                        <input id="fullname" type="text" required>
+                        <label class="data">Full Name</label>
+                    </form>
+                    <form class="primary">
+                        <input id="email" type="email" required>
+                        <label class="data">Email</label>
+                    </form>
+                    <form class="primary">
+                        <input id="subject" type="text" required>
+                        <label class="data">Subject</label>
+                    </form>
+
+                    <form class="primary">
+                        <textarea id="message" required></textarea>
+                        <label class="data">Message</label>
+                    </form>
+
                     <div>
-                        <button class="data" onclick="sendContactData()">Contact us</button>
+                        <button id="contactButton" class="data buttonOne primary ripple" onclick="sendContactData()">Contact us</button>
                     </div>
+
+                    <div id="second" class="secundary">
+                        <p class="data"> Data successfully sended </p>
+                        <!--<p id="backButton" class="data textFiveLight" onclick="returnToTheForm()"> Return </p>-->
+                        <button id="backButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored riple" onclick="returnToTheForm()">
+                            Return
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>

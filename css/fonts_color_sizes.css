@@ -1,75 +1,86 @@
 
+
 .textOneDark {
-    font-family: sans-serif, 'Roboto Regular';
-    font-size: 34px !important;
+    font-family: 'Roboto', serif;
+    font-size: 32px !important;
     color: #fff !important;
     opacity: 1;
+    text-align: justify;
+}
+
+
+.textTwoDark {
+    font-family: 'Roboto', serif;
+    font-size: 20px !important;
+    color: #fff !important;
+    opacity: 0.84;
+    text-align: justify;
 }
 
 
 .textThreeDark {
-    font-family: sans-serif, 'Roboto Mono Regular';
+    font-family: 'Roboto Mono', serif;
     font-size: 16px !important;
     color: #fff !important;
     opacity: 0.54;
+    text-align: justify;
 }
 
 
 .textFourDark {
-    font-family: sans-serif, 'Roboto Mono Regular';
+    font-family: 'Roboto Mono', serif;
     font-size: 20px !important;
     color: #fff !important;
     opacity: 0.84;
+    text-align: justify;
 }
 
 
 
 .textOneLight {
-    font-family: sans-serif, 'Roboto Regular';
-    font-size: 34px !important;
+    font-family: 'Roboto', serif;
+    font-size: 32px !important;
     color: #000 !important;
     opacity: 0.84;
+    line-height: 1em;
+    text-align: justify;
 }
 
 .textTwoLight {
-    font-family: sans-serif, 'Roboto Regular';
+    font-family: 'Roboto', serif;
     font-size: 20px !important;
     color: #000 !important;
     opacity: 0.84;
+    text-align: justify;
 }
 
 .textThreeLight {
-    font-family: sans-serif, 'Roboto Mono Regular';
+    font-family: 'Roboto Mono', serif;
     font-size: 16px !important;
     color: #000 !important;
     opacity: 0.54;
+    text-align: justify;
 }
 
 .textFourLight {
-    font-family: sans-serif, 'Roboto Mono Regular';
+    font-family: 'Roboto Mono', serif;
     font-size: 20px !important;
     color: #000 !important;
     opacity: 0.54;
+    text-align: justify;
 }
 
 .textFiveLight {
-    font-family: sans-serif, 'Roboto Medium';
+    font-family: 'Roboto Mono', serif;
     font-size: 20px !important;
     color: #000;
     opacity: 0.84;
 }
 
-.buttonOne {
-    font-family: sans-serif, 'Roboto Medium';
-    font-size: 14px !important;
-    color: #000 !important;
+
+.textLinks {
+    font-family: 'Roboto', serif;
+    font-size: 15px !important;
+    color: #fff !important;
     opacity: 0.84;
 }
-
-.buttonTwo {
-    font-family: sans-serif, 'Roboto Medium';
-    font-size: 14px !important;
-    color: #000 !important;
-    opacity: 0.84;
-}
-

@@ -19,9 +19,9 @@ body {
     top: 0;
     z-index: 10000;
     color: #fff;
-    font-family: 'sans-serif', 'Roboto';
     height: 55px;
     outline: none;
+    font-family: 'Roboto', serif;
 }
 
 .menuWithShadow {
@@ -34,7 +34,13 @@ body {
     position: relative;
     left: 30px;
     padding: 5px;
-    cursor: default;
+    cursor: pointer;
+}
+
+#menu #logo span {
+    position: relative;
+    top: 11px;
+    right: 7px;
 }
 
 #menu #logo img {
@@ -60,6 +66,7 @@ body {
     margin-right: 15px;
     padding: 5px 10px;
     box-sizing: border-box;
+    font-size: 18px;
     cursor: pointer;
 }
 
@@ -199,10 +206,11 @@ body {
 /* SECTION FOUR */
 
 #sectionFour {
-    font-family: 'sans-serif', 'Roboto';
+    font-family: 'Roboto', 'sans-serif';
     display: flex;
     flex-direction: column;
-    padding: 50px 0;
+    //padding: 50px 0;
+    margin: 0 0 50px 0;
 }
 
 #sectionFour > p {
@@ -215,10 +223,11 @@ body {
 
 #sectionFour > #sectionFourContainer {
     width: 90%;
-    margin: 10px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height: auto;
 }
 
 
@@ -239,7 +248,10 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 1300px;
+    }
+
+    #sectionFour > #sectionFourContainer > #projectOneContainer, #sectionFour > #sectionFourContainer > #projectTwoContainer {
+
     }
 
     #sectionFour > #sectionFourContainer > div {
@@ -258,18 +270,16 @@ body {
 }
 
 
-#sectionFour button {
-    background-color: #fff;
-    opacity: 1;
-}
-
-
 #sectionFour > #sectionFourContainer > #projectOneContainer, #sectionFour > #sectionFourContainer > #projectTwoContainer {
     display: flex;
     flex-direction: column;
     box-shadow: 1px 1px 1px rgba(150,150,150,0.7), -1px 1px 1px rgba(150,150,150,0.4);
     max-width: 600px;
     height: auto;
+}
+
+#sectionFour .projectHeadings {
+    margin-top: 5px;
 }
 
 #sectionFour > #sectionFourContainer > #projectOneContainer div:first-child, #sectionFour > #sectionFourContainer > #projectTwoContainer div:first-child {
@@ -280,18 +290,16 @@ body {
 #sectionFour > #sectionFourContainer > #projectOneContainer div:last-child, #sectionFour > #sectionFourContainer > #projectTwoContainer div:last-child {
     box-sizing: border-box;
     padding: 10px 20px;
-    //height: 30%;
-
 
 }
 
 #sectionFour > #sectionFourContainer > #projectOneContainer div:last-child {
-    background-color: #487584;
+    background-color: #536DFE;
 }
 
 #sectionFour > #sectionFourContainer > #projectTwoContainer div:last-child {
     /* Check */
-    background-color: #FF3D00;
+    background-color: #F44336;
 }
 
 
@@ -301,19 +309,10 @@ body {
     object-fit: cover;
 }
 
-#sectionFour p {
-    font-family: 'sans-serif', 'Roboto';
-}
-
 
 #sectionFour #projectOneSpecification,  #sectionFour #projectTwoSpecification {
     position: relative;
 }
-
-
-
-
-
 
 
 
@@ -335,7 +334,7 @@ body {
 
 #sectionFour #projectOneSpecification object,  #sectionFour #projectTwoSpecification object {
     position: relative;
-    top: 2px;
+    top: 3px;
 }
 
 #sectionFour .description {
@@ -349,30 +348,7 @@ body {
 
 
 #sectionFour #projectOneSpecification button,  #sectionFour #projectTwoSpecification button {
-    margin: 0;
-    border: none;
-    outline: none;
-    font-weight: 600;
-    font-size: 13px;
-    color: #111;
-    min-width: 100px;
-    max-height: 35px;
-    padding: 3px;
-    text-transform: uppercase;
-    border-radius: 3px;
-    font-family: 'sans-serif', 'Roboto';
-    background-color: #eee;
-    cursor: pointer;
-}
-
-
-#sectionFour #projectOneSpecification button:hover,  #sectionFour #projectTwoSpecification button:hover {
-    background-color: #fff !important;
-}
-
-
-#sectionFour #projectOneSpecification button:active,  #sectionFour #projectTwoSpecification button:active {
-    //box-shadow: 1px -1px 1px rgba(150,150,150, 0.6);
+    background-color: #fff;
 }
 
 
@@ -390,6 +366,8 @@ body {
 
 #sectionFive {
     min-height: 350px;
+    height: auto;
+    margin: 0 0 50px 0;
     background-color: #EEEEEE;
     display: flex;
     flex-direction: column;
@@ -405,17 +383,12 @@ body {
 
 
 #sectionFive > div:first-child > .review {
-    height: 200px;
+    height: auto;
     margin: 20px 40px;
     box-sizing: border-box;
     width: 26%;
     min-width: 350px;
-    cursor: pointer;
 }
-
-#sectionFive #firstReview, #sectionFive #thirdReview {
-     opacity: 0.4;
- }
 
 
 
@@ -461,8 +434,8 @@ body {
 }
 
 #sectionFive > div > .review > .clientInfo > div > div p:last-child {
-    color: #bdbdbd;
-    font-size: 11px
+    position: relative;
+    bottom: 8px;
 }
 
 
@@ -470,7 +443,59 @@ body {
     height: 150px;
     box-shadow: 1px 1px 1px rgba(150,150,150, 0.5), -1px 1px 1px rgba(150,150,150, 0.5);
     border: none;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#sectionFive > div  .clientReview > p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.quote {
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+
+}
+
+.curly-quotes {
+    width: 100%;
+    font-size: 15px;
+}
+
+.curly-quotes:before, .curly-quotes:after {
+    display: inline-block;
+    vertical-align: top;
+    height: 30px;
+    line-height: 48px;
+    font-size: 50px;
+    opacity: .2;
+}
+
+.curly-quotes:before {
+    content: '\201C';
+    margin-right: 4px;
+    margin-left: -8px;
+}
+
+.curly-quotes:after {
+    content: '\201D';
+    margin-left: 4px;
+    margin-right: -8px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -566,12 +591,11 @@ body {
 }
 
 
-
 /* SECTION SIX */
 
 
 #sectionSix {
-    margin: 40px 0;
+    margin: 0 0 50px 0;
     height: 500px;
     display: flex;
     flex-direction: row;
@@ -579,6 +603,13 @@ body {
     box-sizing: border-box;
 }
 
+#sectionSix > #sectionSixRightContainer{
+    width: 50%;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #sectionSix > #sectionSixLeftContainer, #sectionSix > #sectionSixRightContainer{
     width: 50%;
@@ -586,6 +617,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 
@@ -602,17 +634,33 @@ body {
         height: 400px !important;
     }
 
-    #sectionSix > #sectionSixLeftContainer  #mediumBlog{
+    #sectionSix > #sectionSixLeftContainer  #mediumBlog,  #sectionSix > #sectionSixLeftContainer > div:first-child{
        position: relative;
-        bottom: 25px;
+        bottom: 20px;
     }
 
 }
 
 
-#sectionSix > #sectionSixLeftContainer #mediumBlog {
+#sectionSix > #sectionSixLeftContainer > div:first-child  {
     width: 60%;
     min-width: 300px;
+    margin: 0 auto;
+}
+
+#sectionSix > #sectionSixLeftContainer > div img  {
+    height: 30px;
+    min-width: 100px;
+    margin: 10px 0;
+}
+
+#sectionSix > #sectionSixLeftContainer > div p  {
+   margin-bottom: 3px;
+}
+
+#sectionSix > #sectionSixLeftContainer #mediumBlog {
+    min-width: 300px;
+    width: 60% !important;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -635,7 +683,6 @@ body {
 #sectionSix > #sectionSixLeftContainer #mediumBlog p {
     padding: 5px;
     margin: 0;
-    font-family: 'sans-serif', 'Roboto';
 }
 
 
@@ -708,8 +755,7 @@ body {
     min-width: 300px;
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 10px;
-    font-family: 'sans-serif', 'Roboto';
+    padding: 10px;;
 }
 
 
@@ -736,32 +782,56 @@ body {
     flex-direction: row;
 }
 
-
-#sectionSix > #sectionSixRightContainer #socialMedia a {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-right: 15px;
-    cursor: pointer;
-    font-size: 14px;
+#sectionSix > #sectionSixRightContainer #socialMedia button {
+    color: #111;
+    min-width: 100px !important;
+    padding: 0 5px !important;
+    margin-right: 5px;
 }
 
-
-#sectionSix > #sectionSixRightContainer #socialMedia a:first-child {
-  color: #3b5998;
+#sectionSix > #sectionSixRightContainer #socialMedia #firstSocial span {
+    color: #3b5998;
 }
 
-
-#sectionSix > #sectionSixRightContainer #socialMedia a:last-child{
+#sectionSix > #sectionSixRightContainer #socialMedia #thirdSocial span {
     color: #0077B5;
 }
 
-
-#sectionSix > #sectionSixRightContainer #socialMedia .icons {
-    display: inline-block;
-    margin-right: 3px;
+#sectionSix > #sectionSixRightContainer #socialMedia button .icons {
     position: relative;
-    bottom: 2px;
+    top: 3px;
+    right: 5px;
 }
+
+#sectionSix > #sectionSixRightContainer #socialMedia button > *{
+    display: inline-block;
+}
+
+/*#sectionSix > #sectionSixRightContainer #socialMedia a {*/
+    /*display: flex;*/
+    /*flex-wrap: nowrap;*/
+    /*padding-right: 15px;*/
+    /*cursor: pointer;*/
+    /*font-size: 14px;*/
+/*}*/
+
+
+/*#sectionSix > #sectionSixRightContainer #socialMedia a:first-child {*/
+  /*color: #3b5998;*/
+/*}*/
+
+
+/*#sectionSix > #sectionSixRightContainer #socialMedia a:last-child{*/
+    /*color: #0077B5;*/
+/*}*/
+
+
+/*#sectionSix > #sectionSixRightContainer #socialMedia .icons {*/
+    /*display: inline-block;*/
+    /*margin-right: 3px;*/
+    /*position: relative;*/
+    /*bottom: 2px;*/
+/*}*/
 
 
 
@@ -777,7 +847,7 @@ body {
     background-color: #111;
     color: #ddd;
     font-size: 18px;
-    font-family: 'sans-serif', 'Roboto';
+    font-family:  'Roboto', serif;
     position: fixed;
     bottom: -80px;
     left: 50%;

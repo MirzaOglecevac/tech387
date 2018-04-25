@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title> Tech387 </title>
 
-
 </head>
 <body>
 
@@ -14,13 +13,17 @@
         <div id="overlay"></div>
 
         <div id="overlayText">
-            <p class="heading data textOneDark" id="firstHeading"> Softveri koji mjenjaju svijet </p>
-            <p class="text data textFourDark">Prioritet je uvijek uspješno dovršen projekt i ispunjavanje svih dogovorenih obveza</p>
+            <p class="heading data textOneDark"> Software that changes the world </p>
+            <p class="text data textFourDark"> Our priority is to deliver a high-end product and to meet your high standards</p>
         </div>
 
-        <div id="downButton" onclick="scrollDown()">
+        <div id="downButton" class="riple" onclick="scrollDown()">
             <img src="assets/down-arrow%20(1).png">
         </div>
+
+        <!--<button id="downButton" onclick="scrollDown()" class="mdl-button mdl-js-button mdl-button&#45;&#45;fab ripple">-->
+            <!--<i class="material-icons" style="color: black;">arrow_drop_down</i>-->
+        <!--</button>-->
 
     </div>
 
@@ -28,15 +31,12 @@
     <!-- SECTION TWO -->
     <div class="section" id="sectionTwo">
         <div id="sectionTwoText">
-            <p class="heading data textOneLight" id="secondHeading"> O nama </p>
-            <p class="subheading data textTwoLight" id="secondSubheading"> Ključne vrijednosti
-                istraživački duh, agilnost, zajedništvo, otvorenost, integritet, ambicioznost
+            <p class="heading data textOneLight" id="secondHeading"> About us </p>
+            <p class="subheading data textTwoLight" id="secondSubheading">
+                Our core values are ambition, unity, impartiality, integrity, flexibility, punctuality and a will to work and improve ourselves.
             </p>
             <p class="text data textThreeLight" id="secondText">
-                Tech 387 je kompanija koja je osnovana sa vizijom pravljenja najzahtjevnijih i ambicioznih softverskih projekata
-                21. stoljeća i sa željom za zapošljavanjem najboljih profesionalaca u industriji koji, sa jakom motivacijom,
-                pristupom koji potiče inovacije i promjene, timskim radom u organizovanom sistemu i istinskom brigom o svim aspektima
-                poslovanja, postižu vrhunske poslovne rezultate i nadmašuju očekivanja korisnika.
+                Tech387 was founded with an ambition to develop the most demanding and ambitious software projects of the 21st century. The members of our team are young, creative and ambitious professionals whose motivated work approach inspires innovation and change.
             </p>
         </div>
     </div>
@@ -47,16 +47,16 @@
         <img src="assets/image_demo.jpg" />
         <div class="sectionThreeRightContainer">
             <div>
-                <p class="heading data textOneLight"> Usluge </p>
+                <p class="heading data textOneLight"> SERVICES</p>
                 <p class="text data textThreeLight">
-                    Usmjereni smo na pružanje usluga uz najbolji odnos cijene/performansi i
-                    izgradnju dugoročnih partnerskih odnosa koji rezultiraju u win-win-win ishodu
-                    za naše korisnike, naše uposlene i Tech 387. <br/>
-
-                    Tech 387 je odgovoran za sve faze razvoja koje uključuju:
-                    Analiza zahtjeva, Dizajn arhitekture, Razvoj, Testiranje, Dokumentacija, Implementacija i Edukacija
+                    We aim to provide the best price/performance ratio and to build long-term partnership relationships that result in a win-win outcome.
                 </p>
-               <button class="data buttonOne" onclick="changePage('aboutus')"> Saznaj više </button>
+
+               <!-- <button class="data buttonOne" onclick="changePage('aboutus')"> Saznaj više </button> -->
+
+                <button class="data mdl-button ripple" onclick="changePage('aboutus')">
+                    Find more
+                </button>
             </div>
         </div>
     </div>
@@ -65,9 +65,7 @@
     <!-- SECTION FOUR -->
     <div class="section" id="sectionFour">
         <p class="heading data textOneLight">
-            Mi smo uz Vas u svakom koraku nastanka uspješnog softvera - od prve ideje, preko izrade
-            i testiranja softvera pa sve do krajnjeg korisnika koji zaslužuje da uživa u najboljem što tehnologija može ponuditi.
-            Sve što Vama treba mi ćemo sa zadovoljstvom da Vam obezbijedimo da bi projekt ostvario maksimalan potencijal.
+            We are at your disposal during the whole software development process - from the first idea, through software development and testing.
         </p>
         <div id="sectionFourContainer">
             <div id="projectOneContainer">
@@ -75,12 +73,15 @@
                     <img src="assets/wobbl_project.png">
                 </div>
                 <div id="projectOneSpecification">
-                    <p class="projectHeadings textTwoLight"> Wobbl </p>
-                    <p class="description data textThreeLight">
-                        Wobbl je jedinstveno softversko rješenje koje korisniku pruža novo iskustvo korištenja najpopularnijih društvenih mreža Facebook - a, Instagram - a, YouTube - a i Twitter - a.
+                    <p class="projectHeadings textTwoDark"> Wobbl </p>
+                    <p class="description data textThreeDark">
+                        Wobbl is a new social platform which offers(provides) a new user experience for the biggest (most popular) social networks: Facebook, Instagram, YouTube and Twitter.
                     </p>
                     <div>
-                        <button class="buttonOne">Case Study</button>
+                        <!--<button class="buttonOne">Case Study</button>-->
+                        <button class="mdl-button ripple">
+                            CASE STUDY
+                        </button>
                         <div>
                             <object class="buttonOne" type="image/svg+xml" width="18" height="18" data="assets/android.svg"></object> <span> ANDROID </span>
                             <object class="buttonOne" type="image/svg+xml" width="18" height="18" data="assets/apple.svg"></object> <span> iOS </span>
@@ -94,12 +95,14 @@
                     <img src="assets/spartan_project.png">
                 </div>
                 <div id="projectTwoSpecification">
-                    <p class="projectHeadings textTwoLight"> Spartan Apps </p>
-                    <p class="description data textThreeLight">
-                        Spartan Apps koncept koji predstavlja niz mobilnih aplikacija za zdravlje i fitnes muškaraca i žena koje imaju za svrhu praćenje aktivnosti i napretka, a s ciljem postizanja željenih rezultata.
-                    </p>
+                    <p class="projectHeadings textTwoDark"> Spartan Apps </p>
+                    <p class="description data textThreeDark">
+                        SpartanApps are a series of fitness apps for men and women. They monitor you’re your fitness activities and process with the aim of achieving the desired result(s)/goal.                    </p>
                     <div>
-                        <button class="buttonOne"> Case Study </button>
+                        <!-- <button class="buttonOne"> Case Study </button> -->
+                        <button class="mdl-button ripple">
+                            CASE STUDY
+                        </button>
                         <div>
                             <object class="buttonOne" type="image/svg+xml" width="18" height="18" data="assets/android.svg"></object> <span> ANDROID </span>
                             <object class="buttonOne" type="image/svg+xml" width="18" height="18" data="assets/apple.svg"></object> <span> iOS </span>
@@ -114,62 +117,93 @@
     <!-- SECTION FIVE -->
     <div class="section" id="sectionFive">
         <div>
-            <div class="review" id="firstReview" onclick="changeReviewStyle(this)">
+            <div class="review" id="firstReview">
                 <div class="clientInfo" id="firstClient">
                     <div>
-                        <img id="firstClientImage" class="hidden_image" src="assets/left.jpg" />
+                        <img id="firstClientImage" class="showed_image" src="assets/employers/denis.jpeg/" />
                         <div>
-                            <p class="textTwoLight"> Full name </p>
+                            <p class="textTwoLight"> Dave Rogosky </p>
                             <p class="textThreeLight"> Apr 5 </p>
                         </div>
                     </div>
                 </div>
-                <div class="clientReview hidden_box textThree" id="firstClientReview"></div>
+                <div class="clientReview arrow_box textThree" id="firstClientReview">
+                    <p class="quote">
+                        <blockquote class="curly-quotes">
+                            The same wind blows on us all.
+                            The difference in arrival is not
+                            the blowing of the wind,
+                            but the set of the sail.
+                        </blockquote>
+                    </p>
+                </div>
             </div>
 
-            <div class="review" id="secondReview" onclick="changeReviewStyle(this)">
+            <div class="review" id="secondReview">
                 <div class="clientInfo" id="secondClient">
                     <div>
-                        <img id="secondClientImage" class="showed_image" src="assets/left.jpg" />
+                        <img id="secondClientImage" class="showed_image" src="assets/employers/rustem.jpeg" />
                         <div>
-                            <p class="textTwoLight"> Full name </p>
-                            <p class="textThreeLight"> Apr 5 </p>
+                            <p class="textTwoLight"> Jonathan </p>
+                            <p class="textThreeLight"> Apr 15 </p>
                         </div>
                     </div>
                 </div>
-                <div class="clientReview arrow_box textThree" id="secondClientReview"></div>
+                <div class="clientReview arrow_box textThree" id="secondClientReview">
+                    <p class="quote">
+                    <blockquote class="curly-quotes">
+                        The same wind blows on us all.
+                        The difference in arrival is not
+                        the blowing of the wind,
+                        but the set of the sail.
+                    </blockquote>
+                    </p>
+                </div>
             </div>
 
-            <div class="review" id="thirdReview" onclick="changeReviewStyle(this)">
+           <div class="review" id="thirdReview">   <!--onclick="changeReviewStyle(this)"-->
                 <div class="clientInfo" id="thirdClient">
                     <div>
-                        <img id="thirdClientImage" class="hidden_image" src="assets/left.jpg" />
+                        <img id="thirdClientImage" class="showed_image" src="assets/employers/arslan.jpeg" />
                         <div>
-                            <p class="textTwoLight"> Full name </p>
-                            <p class="textThreeLight"> Apr 5 </p>
+                            <p class="textTwoLight"> Someone </p>
+                            <p class="textThreeLight"> Mar 17 </p>
                         </div>
                     </div>
                 </div>
-                <div class="clientReview hidden_box textThree" id="thirdClientReview"></div>
+                <div class="clientReview arrow_box textThree" id="thirdClientReview">
+                    <p class="quote">
+                    <blockquote class="curly-quotes">
+                        The same wind blows on us all.
+                        The difference in arrival is not
+                        the blowing of the wind,
+                        but the set of the sail.
+                    </blockquote>
+                    </p>
+                </div>
             </div>
         </div>
 
-        <!-- BUTTONS -->
+        <!-- BUTTONS
         <div>
             <span class="buttons" id="firstButton" onclick="changeReviewStyle(this)"></span>
             <span class="buttons" id="secondButton" onclick="changeReviewStyle(this)"></span>
             <span class="buttons" id="thirdButton" onclick="changeReviewStyle(this)"></span>
-        </div>
+        </div> -->
     </div>
 
 
     <!-- SECTION SIX -->
     <div class="section" id="sectionSix">
         <div id="sectionSixLeftContainer">
+
+            <div>
+                <img src="assets/medium.png">
+                <p class="textThreeLight">Lorem ipsum...</p>
+            </div>
             <a href="https://medium.com/@TECH387/blending-wave-effect-in-after-effect-99c220486fad" target="_blank">
                 <div id="mediumBlog" >
-                    <p class="textOneLight">Medium</p>
-                    <!-- <p class="textThreeLight">Lorem ipsum...</p> -->
+
                     <img src="assets/medium_image.jpeg" />
                     <div>
                         <p class="textFiveLight">Blending wave effect in After effect</p>
@@ -183,47 +217,88 @@
                     </div>
                 </div>
             </a>
+
         </div>
 
         <div id="sectionSixRightContainer">
             <div>
                 <p class="data textOneLight">Follow us on social media </p>
-                <p class="data textThreeLight">Voluptatem quia voluptas sit aspernatur aut odit aut fugitsed quia consequuntur</p>
+                <p class="data textThreeLight"> There are many ways you can connect with us </p>
                 <div id="socialMedia">
 
                     <a href="https://www.facebook.com/tech387/" class="socialIcons buttonTwo" target="_blank">
-                        <div class="icons" style="
-                                             width: 18px;
-                                             height: 18px;
-                                             background-color: 	#3B5998;
-                                             -webkit-mask-image: url('assets/facebook.svg');
-                                             -webkit-mask-size: 18px;">
-                        </div>
-                        FACEBOOK
+                        <button id="firstSocial" class="mdl-button mdl-js-button">
+                            <div class="icons" style="
+                            width: 18px;
+                            height: 18px;
+                            background-color: 	#3B5998;
+                             -webkit-mask-image: url('assets/facebook.svg');
+                             -webkit-mask-size: 18px;">
+                            </div>
+                            <span>FACEBOOK</span>
+                        </button>
                     </a>
 
 
                     <a href="https://www.linkedin.com/company/tech-387" class="socialIcons buttonTwo" target="_blank">
-                        <div class="icons" style="
-                                             width: 18px;
-                                             height: 18px;
-                                             background-color: #333;
-                                             -webkit-mask-image: url('assets/instagram.svg');
-                                             -webkit-mask-size: 18px;">
-                        </div>
-                        INSTAGRAM
+                        <button class="mdl-button mdl-js-button">
+                            <div class="icons" style="
+                                                 width: 18px;
+                                                 height: 18px;
+                                                 background-color: #333;
+                                                 -webkit-mask-image: url('assets/instagram.svg');
+                                                 -webkit-mask-size: 18px;">
+                            </div>
+                            <span>INSTAGRAM</span>
+                        </button>
                     </a>
 
-
                     <a href="https://www.linkedin.com/company/tech-387" class="socialIcons buttonTwo" target="_blank">
-                        <div class="icons" style="
-                                             width: 18px;
-                                             height: 18px;
-                                             background-color: #4875B4;
-                                             -webkit-mask-image: url('assets/linkedin.svg');
-                                             -webkit-mask-size: 18px;">
-                        </div>
-                        LINKED IN</a>
+                        <button id="thirdSocial" class="mdl-button mdl-js-button">
+                            <div class="icons" style="
+                                                 width: 18px;
+                                                 height: 18px;
+                                                 background-color: #4875B4;
+                                                 -webkit-mask-image: url('assets/linkedin.svg');
+                                                 -webkit-mask-size: 18px;">
+                            </div>
+                           <span>LINKEDIN</span>
+                        </button>
+                    </a>
+
+                    <!--<a href="https://www.facebook.com/tech387/" class="socialIcons buttonTwo" target="_blank">-->
+                    <!--<div class="icons" style="-->
+                    <!--width: 18px;-->
+                    <!--height: 18px;-->
+                    <!--background-color: 	#3B5998;-->
+                    <!-- -webkit-mask-image: url('assets/facebook.svg');-->
+                    <!-- -webkit-mask-size: 18px;">-->
+                    <!--</div>-->
+                    <!--FACEBOOK-->
+                    <!--</a>-->
+
+
+                    <!--<a href="https://www.linkedin.com/company/tech-387" class="socialIcons buttonTwo" target="_blank">-->
+                        <!--<div class="icons" style="-->
+                                             <!--width: 18px;-->
+                                             <!--height: 18px;-->
+                                             <!--background-color: #333;-->
+                                             <!-- -webkit-mask-image: url('assets/instagram.svg');-->
+                                             <!-- -webkit-mask-size: 18px;">-->
+                        <!--</div>-->
+                        <!--INSTAGRAM-->
+                    <!--</a>-->
+
+
+                    <!--<a href="https://www.linkedin.com/company/tech-387" class="socialIcons buttonTwo" target="_blank">-->
+                        <!--<div class="icons" style="-->
+                                             <!--width: 18px;-->
+                                             <!--height: 18px;-->
+                                             <!--background-color: #4875B4;-->
+                                             <!-- -webkit-mask-image: url('assets/linkedin.svg');-->
+                                             <!-- -webkit-mask-size: 18px;">-->
+                        <!--</div>-->
+                        <!--LINKED IN</a>-->
 
                 </div>
             </div>
@@ -232,19 +307,52 @@
 
     <!-- SECTION SEVEN -->
     <div class="section" id="sectionSeven">
+
         <div id="map"></div>
         <div id="formContainer">
             <div id="form">
-                <p class="data textFiveLight"> Work with us </p>
-                <p class="data textThreeLight"> Lorem ipsum</p>
-                <input id="fullname" class="textInput data" type="text" placeholder="Full Name" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>
-                <input id="email" class="textInput data" type="text" placeholder="Email" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>
-                <input id="subject" class="textInput data" type="text" placeholder="Subject" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>
-                <textarea id="message" class="textInput data" type="text" placeholder="Message" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"></textarea>
+                <p class="data textFiveLight primary"> Let’s start our work relationship </p>
+                <p class="data textThreeLight primary"> Leave A Message </p>
+                <br/>
+                    <form class="primary">
+                        <input id="fullname" type="text" required>
+                        <label class="data">Full Name</label>
+                    </form>
+                <form class="primary">
+                    <input id="email" type="email" required>
+                    <label class="data">Email</label>
+                </form>
+                <form class="primary">
+                    <input id="subject" type="text" required>
+                    <label class="data">Subject</label>
+                </form>
+
+                <form class="primary">
+                    <textarea id="message" required></textarea>
+                    <label class="data">Message</label>
+                </form>
+
+                <!--<input id="fullname" class="textInput data primary" type="text" placeholder="Full Name" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>-->
+                <!--<input id="email" class="textInput data primary" type="text" placeholder="Email" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>-->
+                <!--<input id="subject" class="textInput data primary" type="text" placeholder="Subject" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"/>-->
+                <!--<textarea id="message" class="textInput data primary" type="text" placeholder="Message" onfocus="changeInputBottomBorder(this)" onblur="returnInputBottomBorder(this)"></textarea>-->
+
                 <div>
-                    <button class="data buttonOne" onclick="sendContactData()">Contact us</button>
+                    <button id="contactButton" class="data buttonOne primary ripple" onclick="sendContactData()">Contact us</button>
                 </div>
+
+                <div id="second" class="secundary">
+                    <p class="data"> Data successfully sended </p>
+                    <!--<p id="backButton" class="data textFiveLight" onclick="returnToTheForm()"> Return </p>-->
+                    <!-- Colored raised button -->
+                    <button id="backButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored riple" onclick="returnToTheForm()">
+                        Return
+                    </button>
+
+                </div>
+
             </div>
+
         </div>
     </div>
 

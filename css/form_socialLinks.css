@@ -51,10 +51,11 @@
 #sectionFourAbout  #ourSocialLinks .icons {
     display: inline-block;
     position: relative;
-    top: 3px !important;
-    left: 0px !important;
-
+    top: 3px;
+    left: 2px;
 }
+
+
 
 #sectionFourAbout > div:first-child > #ourSocialLinks span {
     display: inline-block;
@@ -67,18 +68,31 @@
 }
 
 
+#sectionFourAbout  #medium > div {
+    position: relative;
+    top: 5px !important;
+}
+
+
 #sectionFourAbout > div:nth-child(2) {
     display: flex;
     justify-content: center;
 }
 
+#sectionFourAbout  #medium > span {
+    position: relative;
+    right: 7px !important;
+}
 
 
 #sectionFourAbout #formContainer {
     background-color: #303030;
     min-width: 300px;
     width: 60%;
+    position: relative;
+    bottom: 10px;
 }
+
 
 #sectionFourAbout #formContainer > div {
     width: 100%;
@@ -89,14 +103,13 @@
     flex-direction: column;
     position: relative;
     top: 10px;
-
 }
+
 
 #sectionFourAbout #formContainer > div * {
     width: 80%;
     margin: 0 auto;
 }
-
 
 
 #sectionFourAbout #form > p:first-child {
@@ -119,7 +132,7 @@
     font-weight: 500;
     font-size: 13px;
     border-radius: 1px;
-    padding: 5px;
+    padding: 10px 5px;
     color: #111;
     min-width: 100px;
     max-width: 150px;
@@ -159,7 +172,7 @@
         min-width: 300px;
         width: 50%;
         position: relative;
-        top: 20px;
+        top: 30px;
     }
 
     #sectionFourAbout > div:first-child > #ourSocialLinks {

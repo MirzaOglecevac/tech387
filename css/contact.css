@@ -59,8 +59,8 @@
 
 #sectionFourA > div:first-child > #ourSocialLinks div span div {
     position: relative;
-    top: 16px;
-    right: 5px;
+    top: 20px;
+    right: 2px;
 }
 
 #sectionFourA > div:first-child > #ourSocialLinks span {
@@ -84,7 +84,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 50px !important;
+        top: 70px ;
     }
 
     #contactContainer > div {
@@ -192,11 +192,11 @@ text-transform: uppercase;
 font-weight: 500;
 font-size: 13px;
 border-radius: 1px;
-padding: 5px;
+padding: 10px 5px;
 color: #111;
 width: 60%;
 min-width: 100px;
-    max-width: 150px;
+max-width: 150px;
 font-family: 'sans-serif', 'Roboto';
 background-color: #00E676;
 box-shadow: 1px 2px 1px rgba(150,150,150, 0.6);
@@ -205,12 +205,12 @@ cursor: pointer;
 
 
 #sectionSevenC #form button:hover {
-background-color: #00C853;
+    background-color: #00C853;
 }
 
 
 #sectionSevenC #form button:active {
-box-shadow: 1px -1px 1px rgba(150,150,150, 0.6);
+    box-shadow: 1px -1px 1px rgba(150,150,150, 0.6);
 }
 
 #sectionSevenC #message {
@@ -218,14 +218,13 @@ height: 80px;
 resize: none;
 }
 
+#sectionSevenC .secundary {
+    display: none;
+}
 
-
-
-
-
-
-
-
+#sectionSevenC .secundary p {
+    text-align: center;
+}
 
 
 /* OVERWRITTEN STYLE */
@@ -249,8 +248,8 @@ min-width: 350px;
 width: 50%;
 max-width: 400px;
 margin: 0 auto;
-height: 400px;
-box-shadow: 1px 2px 2px rgba(150,150,150,0.5), -1px 2px 2px rgba(150,150,150,0.5);
+height: 450px;
+box-shadow: 1px 2px 2px rgba(150,150,150,0.5), -1px 0 2px rgba(150,150,150,0.3), 0 -1px 1px rgba(150,150,150,0.5);
 position: relative;
 top: 20px;
 }
@@ -261,6 +260,28 @@ background-color: #fff;
 padding: 20px 10px;
 display: flex;
 flex-direction: column;
+}
+
+#sectionSevenC .secundary p:first-child {
+    margin-bottom: 10px;
+    font-family: 'Roboto Mono', serif;
+    font-size: 16px !important;
+    color: #000 !important;
+    opacity: 0.54;
+    text-align: center;
+    width: 100%;
+}
+
+#sectionSevenC #backButton {
+    background-color: #00E676;
+    color: #111 !important;
+    width: 100px !important;
+    position: relative !important;
+    left: 50% !important;
+    margin-left: -50px !important;
+    padding: 0 5px 5px 5px !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
 }
 
 

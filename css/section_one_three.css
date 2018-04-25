@@ -1,8 +1,9 @@
 /* SECTION ONE */
 
 #sectionOne {
-    height: 450px !important;
+    height: 618px;
     position: relative;
+    margin: 0 0 50px 0;
 }
 
 
@@ -36,32 +37,29 @@
     color: #fff;
     z-index: 200;
     position: absolute;
-    top: 170px;
+    top: 230px;
 }
 
 
 #sectionOne > #overlayText p {
-    // margin: 0 auto;
+     margin: 0 auto;
     text-align: center;
     width: 100%;
-    margin: 0;
+    max-width: 475px;
+    line-height: 1;
 }
 
 
 #sectionOne #downButton {
     position: absolute;
     z-index: 200;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
     background-color: #00E676;
     bottom: 20px;
     left: calc(50% - 15px);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
     cursor: pointer;
-}
-
-#sectionOne #downButton:hover {
-    background-color: #00C853;
 }
 
 
@@ -70,7 +68,7 @@
     width: 12px;
     height: 12px;
     position: relative;
-    top: 11px;
+    top: 8px;
     left: 12px;
 }
 
@@ -84,22 +82,23 @@
     display: flex;
     flex-direction: row;
     padding: 0;
-    margin: 0;
+    margin: 0 0 50px 0;
+    height: 618px !important;
 }
 
 
 .sectionThree > * {
     width: 50%;
     box-sizing: border-box;
-    height: 500px;
+    height: auto;
 }
-
 
 
 @media only screen and (max-width: 850px) {
 
     .sectionThree {
         flex-direction: column;
+        height: auto !important;
     }
 
     .sectionThree > * {
@@ -108,7 +107,7 @@
 
     .sectionThree > .sectionThreeRightContainer{
         position: relative;
-        bottom: 20px;
+        padding: 20px 0;
     }
 
 }
@@ -145,30 +144,20 @@
 
 
 .sectionThree > .sectionThreeRightContainer > div  button {
-    border: none;
-    outline: none;
     margin-left: 10px;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-    border-radius: 3px;
-    color: #111;
     width: 120px;
-    font-family: 'sans-serif', 'Roboto';
     background-color: #00E676;
+    padding: 0 5px 15px 5px;
     box-shadow: 1px 2px 1px rgba(150,150,150, 0.6);
-    cursor: pointer;
 }
 
 
-.sectionThree > .sectionThreeRightContainer > div  button:hover {
-    background-color: #00C853;
+.sectionThree .heading {
+    width: 100%;
+    text-align: start !important;
 }
 
-
-.sectionThree > .sectionThreeRightContainer > div  button:active {
-    box-shadow: 1px -1px 1px rgba(150,150,150, 0.6);
-}
 
 
 

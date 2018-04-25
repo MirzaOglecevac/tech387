@@ -74,9 +74,40 @@ function sendContactData(){
             message: message
         });
 
-        xhr.send(body);
+
+
+        for(var i = 0; i < document.getElementsByClassName('primary').length; i++){
+            console.log("inside");
+            document.getElementsByClassName('primary')[i].style = "display: none;";
+        }
+
+        document.getElementsByClassName('secundary')[0].style = "display: block !important;";
+        //document.getElementById('second').style = "display: block !important";
+
+        //xhr.send(body);
+        // if (this.readyState === 4 && this.status == 200) {
+        //
+        // };
     }
 }
+
+
+/**
+ * Return to form after submitting it
+ */
+function returnToTheForm(){
+    document.getElementsByClassName('secundary')[0].style = "display: none;";
+    document.getElementById('fullname').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('subject').value = '';
+    document.getElementById('message').value = '';
+
+    for(var i = 0; i < document.getElementsByClassName('primary').length; i++){
+        document.getElementsByClassName('primary')[i].style = "display: block;";
+    }
+}
+
+
 
 
 /**
@@ -153,7 +184,7 @@ function changeMenuBackgroundColor(){
         return;
     }
 
-    if(window.scrollY > 395){
+    if(window.scrollY > 573){
         document.getElementById("menu").classList.add('menuWithShadow');
     }else {
         document.getElementById("menu").classList.remove('menuWithShadow');
@@ -300,7 +331,6 @@ function toggleMenu(item){
     var page = sessionStorage.getItem('page');
 
     if(window.innerWidth <= 850 && item === 'close'){
-        console.log("bingo");
         document.getElementById('menuItemsBigScreen').style.height = 0;
         if(window.scrollY < 60){
             console.log("THERE");
@@ -315,7 +345,7 @@ function toggleMenu(item){
 
 
     if(menuOpened === false){
-        document.getElementById('menuItemsBigScreen').style.height = '195px';
+        document.getElementById('menuItemsBigScreen').style.height = '218px ';
         if(page === 'main' || page === 'aboutus'){
             document.getElementById('menu').classList.add('scrollOver');
         }
@@ -338,7 +368,8 @@ function toggleMenu(item){
  * Change style of active client review
  * @param item
  */
-function changeReviewStyle(item){
+
+/*function changeReviewStyle(item){
 
     var id = item.id;
 
@@ -379,14 +410,15 @@ function changeReviewStyle(item){
             document.getElementById(reviewItems[i]).style.opacity = 0.4;
         }
     }
-}
+}*/
 
 
 /**
  * Change style of inactive client reviews
  * @param item
  */
-function styleHiddenReviews(item) {
+
+/*function styleHiddenReviews(item) {
 
     if(item === 'firstReview' || item === 'firstButton'){
         document.getElementById('secondClientImage').classList.add('hidden_image');
@@ -430,7 +462,7 @@ function styleHiddenReviews(item) {
         document.getElementById('secondButton').style.backgroundColor = "#aaa";
         document.getElementById('firstButton').style.backgroundColor = "#aaa";
     }
-}
+}*/
 
 
 /**
@@ -458,7 +490,9 @@ function returnInputBottomBorder(item){
  */
 function scrollDown(){
     var currentYPosition = window.scrollY;
-    var toScroll = 395 - currentYPosition;
+    var toScroll = 574 - currentYPosition;
+
+    console.log(window.scrollY);
 
     window.scrollBy({
         top: toScroll,
