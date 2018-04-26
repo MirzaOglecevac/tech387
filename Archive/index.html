@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <!-- For different viewports -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <meta charset="UTF-8">
+    <meta name="description" content="Tech387 was founded with an ambition to develop the most demanding and ambitious software projects of the 21st century. The members of our team are young, creative and ambitious professionals whose motivated work approach inspires innovation and change.">
+    <meta name="keywords" content="Tech387, PHP, Android, iOS, Web Design, Programming">
+
+
+    <title>Tech387</title>
+
+    <!-- Material Design Lite libraries -->
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Tab icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logo_tab.png" />
+
+    <!-- Font Roboto and Roboto Mono -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/ripple.css" />
+    <link rel="stylesheet" href="css/shared_all.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/section_one_three.css" />
+    <link rel="stylesheet" href="css/section_two.css" />
+    <link rel="stylesheet" href="css/form_socialLinks.css" />
+    <link rel="stylesheet" href="css/big_form.css" />
+    <link rel="stylesheet" href="css/team.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/floating_labels.css" />
+    <link rel="stylesheet" href="css/fonts_color_sizes.css" />
+
+    <!-- Scripts -->
+    <script src="js/languages.js"></script>
+    <script src="js/jquery_only_ajax.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body onload="callMainFunctions()" onscroll="changeMenuBackgroundColor()">
+
+    <div id="menu">
+
+        <div id="logo" onclick="changePage('main')">
+            <img src="assets/logo.png" />
+            <span>Tech387</span>
+        </div>
+
+
+        <ul id="menuItemsBigScreen">
+            <li id="main" class="menuItems" onclick="changePage(this)">O nama</li>
+            <li id="aboutus" class="menuItems" onclick="changePage(this)">Misija i vizija</li>
+            <li id="team" class="menuItems" onclick="changePage(this)">Tim</li>
+            <li id="contact" class="menuItems" onclick="changePage(this)">Kontakt</li>
+            <li id="languages">
+
+                <div id="chooseLanguageStatement">
+                    <span id="hiddenText" class="menuItems">Change language</span>
+                    <span id="flags">
+                        <img id="english" onclick="checkLanguage(this)" src="assets/united-kingdom.svg" />
+                        <img id="bosnian" onclick="checkLanguage(this)" src="assets/bosnia-and-herzegovina.svg" />
+                    </span>
+                </div>
+
+            </li>
+        </ul>
+
+        <div id="menuIcon" onclick="toggleMenu()" style="
+                                     width: 24px;
+                                     height: 24px;
+                                     background-color: #fff;
+                                     -webkit-mask-image: url('assets/menu_one.svg');
+                                     -webkit-mask-size: 24px;">
+        </div>
+
+    </div>
+
+
+    <div id="container" onclick="closeMenu(this)"></div>
+
+    <div id="toast"></div>
+
+</body>
+</html>

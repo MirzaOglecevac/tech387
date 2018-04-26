@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10859 3174 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="ic_android_black_24px" transform="translate(10859 3174)">
+    <path id="Path_91" data-name="Path 91" class="cls-1" d="M0,0H24V24H0Z"/>
+    <path id="Shape" class="cls-2" d="M33.134,46.915a.7.7,0,0,0-.227-.588L31.227,44.3V44h5.218l4.034,8.846L44.025,44H49v.3L47.563,45.68a.42.42,0,0,0-.16.4V56.207a.42.42,0,0,0,.16.4l1.4,1.378v.3H41.908v-.3l1.454-1.411c.143-.143.143-.185.143-.4V47.99L39.462,58.256h-.546L34.21,47.99v6.88a.949.949,0,0,0,.261.79l1.891,2.293v.3H31v-.3l1.891-2.293a.916.916,0,0,0,.244-.79Z" transform="translate(-28 -39)"/>
+  </g>
+</svg>

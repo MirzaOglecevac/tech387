@@ -3,13 +3,16 @@
  * @type {[*]}
  */
 
+
+
+
 var englishMain = [
-    'Software that changes the world',
+    'Software that changes',
     'Our priority is to deliver a high-end product and to meet your high standards',
     'About us',
-    'Our core values are ambition, unity, impartiality, integrity, flexibility, punctuality and a will to work and improve ourselves.',
-    'Tech387 was founded with an ambition to develop the most demanding and ambitious software projects of the 21st century. The members of our team are young, creative and ambitious professionals whose motivated work approach inspires innovation and change.',
-    'SERVICES',
+    'Our core values are ambition, unity, impartiality.',
+    'Tech387 was founded with an ambition to develop the most demanding and ambitious software projects of the 21st century. The members of our team are young',
+    'Services',
 
     'We aim to provide the best price/performance ratio and to build long-term partnership relationships that result in a win-win outcome.',
     'Find more',
@@ -31,7 +34,7 @@ var englishMain = [
 ];
 
 var englishAboutUs = [
-    'Software that changes the world',
+    'Software that changes',
     'Our priority is to deliver a high-end product and to meet your high standards',
     'Software development',
     'We are experienced in working in different time zones (mostly USA, Australia and Europe). Our software development team is steadily growing and we currently employ developers working on various projects for clients all around the world. Tech387 is always at the clients’ disposal so they achieve their ambitions in achieving designing, developing and integration of critical IT solutions.',
@@ -44,14 +47,13 @@ var englishAboutUs = [
     'Database Management System (DBMS)',
     'DBMS is a software bundle designed to define, manipulate, retrieve and manage data in a database. It usually handles information, field names, file structure and data formatting. The bundle defines the rules according to which the information will be validated or manipulated with. Additionally, DBMS assists its user in the data maintenance process. ',
     'Let’s start our work relationship',
-
     'Contact us'
 ];
 
 var englishTeam = [
     'About us',
-    'Our core values are ambition, unity, impartiality, integrity, flexibility, punctuality and a will to work and improve ourselves.',
-    'Tech387 was founded with an ambition to develop the most demanding and ambitious software projects of the 21st century. The members of our team are young, creative and ambitious professionals whose motivated work approach inspires innovation and change. ',
+    'Our core values are ambition, unity, impartiality.',
+    'Tech387 was founded with an ambition to develop the most demanding and ambitious software projects of the 21st century. The members of our team are young',
 
     'The team are enable to provide end-to-end services for our clients, starting from assessing technology, development, and support.',
     'Let’s start our work relationship ',
@@ -83,11 +85,11 @@ var englishContact = [
 
 var bosnianMain = [
 
-    'Softveri koji mjenjaju svijet',
+    'Softveri koji mjenjaju',
     'Prioritet je uvijek uspješno dovršen projekt i ispunjavanje svih dogovorenih obveza',
     'O nama',
-    'Ključne vrijednosti: istraživački duh, agilnost, zajedništvo, otvorenost, integritet, ambicioznost',
-    'Tech 387 je kompanija koja je osnovana sa vizijom pravljenja najzahtjevnijih softverskih projekata 21. stoljeća i sa željom za zapošljavanjem najboljih profesionalaca u industriji koji, sa jakom motivacijom, pristupom koji potiče inovacije, timskim radom i istinskom brigom,nadmašuju očekivanja korisnika.',
+    'Ključne vrijednosti: istraživački duh, agilnost',
+    'Tech 387 je kompanija koja je osnovana sa vizijom pravljenja najzahtjevnijih softverskih projekata 21. stoljeća i sa željom za zapošljavanjem najboljih profesionalaca u industriji koji',
     'Usluge',
     'Usmjereni smo na pružanje usluga uz najbolji odnos cijene/performansi i izgradnju dugoročnih partnerskih odnosa.',
     'Saznaj vise',
@@ -110,7 +112,7 @@ var bosnianMain = [
 
 
 var bosnianAboutUs = [
-    'Softveri koji mjenjaju svijet',
+    'Softveri koji mjenjaju',
     'Prioritet je uvijek uspješno dovršen projekt i ispunjavanje svih dogovorenih obveza',
     'Razvoj softvera',
     'Imamo iskustva u radu u različitim vremenskim zonama (uglavnom SAD, Australija i Europa). Naš tim za razvoj softvera je u stalnom porastu i trenutno zapošljavamo programere koji rade na različitim projektima za investitore u cijelom svijetu. Tech 387 pomaže svojim korisnicima da postignu poslovne ciljeve vezane uz dizajn, razvoj i integraciju kritičnih IT rješenja.',
@@ -129,8 +131,8 @@ var bosnianAboutUs = [
 
 var bosnianTeam = [
     'O nama',
-    'Ključne vrijednosti: istraživački duh, agilnost, zajedništvo, otvorenost, integritet, ambicioznost',
-    'Tech 387 je kompanija koja je osnovana sa vizijom pravljenja najzahtjevnijih softverskih projekata 21. stoljeća i sa željom za zapošljavanjem najboljih profesionalaca u industriji koji, sa jakom motivacijom, pristupom koji potiče inovacije, timskim radom i istinskom brigom,nadmašuju očekivanja korisnika.',
+    'Ključne vrijednosti: istraživački duh, agilnost',
+    'Tech 387 je kompanija koja je osnovana sa vizijom pravljenja najzahtjevnijih softverskih projekata 21. stoljeća i sa željom za zapošljavanjem najboljih profesionalaca u industriji koji',
     'Osmislili smo i razvili revolucionarne softvere. Naše razvojne vještine i stručnost u tehničkom savjetovanju i razvoju softvera omogućuju nam pružanje end-to-end usluge.',
     'Postanimo business partneri',
 

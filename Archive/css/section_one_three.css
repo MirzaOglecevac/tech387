@@ -1,0 +1,170 @@
+/* SECTION ONE */
+
+#sectionOne {
+    height: 618px;
+    position: relative;
+    margin: 0 0 50px 0;
+}
+
+
+#sectionOne > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#sectionOne > #overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.54;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#sectionOne > #overlayText {
+    width: 100%;
+    min-width: 250px;
+    height: 100px;
+    color: #fff;
+    z-index: 200;
+    position: absolute;
+    top: 230px;
+}
+
+
+#sectionOne > #overlayText p {
+     margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    max-width: 475px;
+    line-height: 1;
+}
+
+
+#sectionOne #downButton {
+    position: absolute;
+    z-index: 200;
+    background-color: #00E676;
+    bottom: 20px;
+    left: calc(50% - 15px);
+    /*border-radius: 50%;*/
+    /*width: 36px;*/
+    /*height: 36px;*/
+    cursor: pointer;
+}
+
+
+/*#sectionOne #downButton:hover {*/
+
+    /*background-color: #00C853;*/
+
+/*}*/
+
+
+#sectionOne #downButton > img{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: relative;
+    top: 8px;
+    left: 12px;
+}
+
+
+
+/* SECTION THREE */
+
+
+
+.sectionThree {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0 0 50px 0;
+    height: 618px !important;
+}
+
+
+.sectionThree > * {
+    width: 50%;
+    box-sizing: border-box;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 850px) {
+
+    .sectionThree {
+        flex-direction: column;
+        height: auto !important;
+    }
+
+    .sectionThree > * {
+        width: 100%;
+    }
+
+    .sectionThree > .sectionThreeRightContainer{
+        position: relative;
+        padding: 20px 0;
+    }
+
+}
+
+
+.sectionThree > img {
+    object-fit: cover;
+}
+
+.sectionThree > .sectionThreeRightContainer{
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sectionThree > .sectionThreeRightContainer > div{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.sectionThree > .sectionThreeRightContainer > div * {
+    padding: 10px;
+    margin: 0;
+}
+
+
+.sectionThree > .sectionThreeRightContainer > div > .text {
+    color: #999;
+}
+
+
+.sectionThree > .sectionThreeRightContainer > div  button {
+    margin-left: 10px;
+    text-transform: uppercase;
+    width: 120px;
+    background-color: #00E676;
+    padding: 0 5px 15px 5px;
+    box-shadow: 1px 2px 1px rgba(150,150,150, 0.6);
+}
+
+
+.sectionThree .heading {
+    width: 100%;
+    text-align: start !important;
+}
+
+
+
+

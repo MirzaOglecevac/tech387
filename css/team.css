@@ -34,14 +34,14 @@
       font-size: 20px;
       padding: 10px;
       width: 80%;
-     max-width: 1200px;
-      margin: 0 auto;
+      max-width: 781px;
+      margin: 0 auto 20px auto;
       color: #333;
  }
 
 
 #sectionThreeAbout .imageContainer {
-    width: 200px;
+    width: 250px;
     height: 250px;
     margin: 15px;
     position: relative;
@@ -55,7 +55,7 @@
 
 #sectionThreeAbout .imageContainer > div {
     position: absolute;
-    width: 200px;
+    width: 250px;
     height: 250px;
     background-color: #000;
     opacity: 0.44;
@@ -86,7 +86,7 @@
 
 
 #sectionThreeAbout > div  img {
-     width: 200px;
+     width: 250px;
      height: 250px;
      box-shadow: 1px 2px 2px rgba(170,170,170, 0.6), -1px 2px 2px rgba(170,170,170, 0.6);
  }
@@ -114,7 +114,7 @@
 
     #sectionThreeAbout .imageContainer {
         width: 250px;
-        height: 300px;
+        height: 250px;
         margin: 15px;
         position: relative;
     }
@@ -123,7 +123,7 @@
     #sectionThreeAbout .imageContainer > div {
         position: absolute;
         width: 250px;
-        height: 300px;
+        height: 250px;
         background-color: #000;
         opacity: 0.44;
         color: #fff;
@@ -131,7 +131,7 @@
 
     #sectionThreeAbout > div  img {
         width: 250px;
-        height: 300px;
+        height: 250px;
         box-shadow: 1px 2px 2px rgba(170,170,170, 0.6), -1px 2px 2px rgba(170,170,170, 0.6);
     }
 }

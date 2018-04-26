@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title> Tech387 </title>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2T3lrznByOxHwvBNhpcAgP4Vo0el2GNU&callback=myMap"></script>
 </head>
 <body>
 
@@ -17,13 +17,14 @@
             <p class="text data textFourDark"> Our priority is to deliver a high-end product and to meet your high standards</p>
         </div>
 
-        <div id="downButton" class="riple" onclick="scrollDown()">
-            <img src="assets/down-arrow%20(1).png">
-        </div>
+        <!--<div id="downButton" class="riple" onclick="scrollDown()">-->
+            <!--<img src="assets/down-arrow%20(1).png">-->
+        <!--</div>-->
 
-        <!--<button id="downButton" onclick="scrollDown()" class="mdl-button mdl-js-button mdl-button&#45;&#45;fab ripple">-->
-            <!--<i class="material-icons" style="color: black;">arrow_drop_down</i>-->
-        <!--</button>-->
+        <!-- Colored mini FAB button -->
+        <button id="downButton" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" onclick="scrollDown()">
+            <i class="material-icons" style="color: #111">arrow_drop_down</i>
+        </button>
 
     </div>
 
@@ -47,7 +48,7 @@
         <img src="assets/image_demo.jpg" />
         <div class="sectionThreeRightContainer">
             <div>
-                <p class="heading data textOneLight"> SERVICES</p>
+                <p class="heading data textOneLight"> Services </p>
                 <p class="text data textThreeLight">
                     We aim to provide the best price/performance ratio and to build long-term partnership relationships that result in a win-win outcome.
                 </p>
@@ -70,11 +71,11 @@
         <div id="sectionFourContainer">
             <div id="projectOneContainer">
                 <div>
-                    <img src="assets/wobbl_project.png">
+                    <img src="assets/wobbl_thumbnail.jpg">
                 </div>
                 <div id="projectOneSpecification">
                     <p class="projectHeadings textTwoDark"> Wobbl </p>
-                    <p class="description data textThreeDark">
+                    <p id="textOne" class="description data textThreeDark">
                         Wobbl is a new social platform which offers(provides) a new user experience for the biggest (most popular) social networks: Facebook, Instagram, YouTube and Twitter.
                     </p>
                     <div>
@@ -92,11 +93,11 @@
 
             <div id="projectTwoContainer">
                 <div>
-                    <img src="assets/spartan_project.png">
+                    <img src="assets/spartan_thumbnail.jpg">
                 </div>
                 <div id="projectTwoSpecification">
                     <p class="projectHeadings textTwoDark"> Spartan Apps </p>
-                    <p class="description data textThreeDark">
+                    <p id="textTwo" class="description data textThreeDark">
                         SpartanApps are a series of fitness apps for men and women. They monitor you’re your fitness activities and process with the aim of achieving the desired result(s)/goal.                    </p>
                     <div>
                         <!-- <button class="buttonOne"> Case Study </button> -->
@@ -128,14 +129,12 @@
                     </div>
                 </div>
                 <div class="clientReview arrow_box textThree" id="firstClientReview">
-                    <p class="quote">
-                        <blockquote class="curly-quotes">
+                        <p class="curly-quotes">
                             The same wind blows on us all.
                             The difference in arrival is not
                             the blowing of the wind,
                             but the set of the sail.
-                        </blockquote>
-                    </p>
+                        </p>
                 </div>
             </div>
 
@@ -150,13 +149,11 @@
                     </div>
                 </div>
                 <div class="clientReview arrow_box textThree" id="secondClientReview">
-                    <p class="quote">
-                    <blockquote class="curly-quotes">
+                    <p class="curly-quotes">
                         The same wind blows on us all.
                         The difference in arrival is not
                         the blowing of the wind,
                         but the set of the sail.
-                    </blockquote>
                     </p>
                 </div>
             </div>
@@ -172,14 +169,13 @@
                     </div>
                 </div>
                 <div class="clientReview arrow_box textThree" id="thirdClientReview">
-                    <p class="quote">
-                    <blockquote class="curly-quotes">
+                    <p class="curly-quotes">
                         The same wind blows on us all.
                         The difference in arrival is not
                         the blowing of the wind,
                         but the set of the sail.
-                    </blockquote>
                     </p>
+
                 </div>
             </div>
         </div>
@@ -190,6 +186,7 @@
             <span class="buttons" id="secondButton" onclick="changeReviewStyle(this)"></span>
             <span class="buttons" id="thirdButton" onclick="changeReviewStyle(this)"></span>
         </div> -->
+
     </div>
 
 
@@ -199,14 +196,15 @@
 
             <div>
                 <img src="assets/medium.png">
-                <p class="textThreeLight">Lorem ipsum...</p>
+                <p class="textThreeLight"> Lorem ipsum... </p>
             </div>
+
             <a href="https://medium.com/@TECH387/blending-wave-effect-in-after-effect-99c220486fad" target="_blank">
                 <div id="mediumBlog" >
 
                     <img src="assets/medium_image.jpeg" />
                     <div>
-                        <p class="textFiveLight">Blending wave effect in After effect</p>
+                        <p class="textFourLight">Blending wave effect in After effect</p>
                         <div id="userProfile">
                             <img src="assets/medium_profile_image.png" />
                             <div>
@@ -241,7 +239,7 @@
 
 
                     <a href="https://www.linkedin.com/company/tech-387" class="socialIcons buttonTwo" target="_blank">
-                        <button class="mdl-button mdl-js-button">
+                        <button id="instagramButton" class="mdl-button mdl-js-button">
                             <div class="icons" style="
                                                  width: 18px;
                                                  height: 18px;
@@ -319,7 +317,7 @@
                         <label class="data">Full Name</label>
                     </form>
                 <form class="primary">
-                    <input id="email" type="email" required>
+                    <input id="email" type="text" required>
                     <label class="data">Email</label>
                 </form>
                 <form class="primary">
@@ -328,7 +326,7 @@
                 </form>
 
                 <form class="primary">
-                    <textarea id="message" required></textarea>
+                    <textarea id="message" type="text" required></textarea>
                     <label class="data">Message</label>
                 </form>
 
@@ -461,7 +459,7 @@
         }
     </script>
     <!-- Script needed for obtaining geo location -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2T3lrznByOxHwvBNhpcAgP4Vo0el2GNU&callback=myMap"></script>
+
 
 </body>
 </html>

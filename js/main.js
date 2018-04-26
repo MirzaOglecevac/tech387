@@ -1,4 +1,9 @@
 
+
+
+
+
+
 // PROPERTIES
 
 // currently active menu item
@@ -160,6 +165,9 @@ function changePage(event){
  * Close dropdown menu after resizing screen over 850px and style approprietely menu items
  */
 window.addEventListener('resize', function(){
+
+   checkDivsHeight();
+
     var page = sessionStorage.getItem('page');
     if(window.innerWidth >= 850){
         if(menuOpened === true){
@@ -171,6 +179,16 @@ window.addEventListener('resize', function(){
     }
 });
 
+function checkDivsHeight(){
+    // var one = document.getElementById('textOne').clientHeight;
+    // var two = document.getElementById('textTwo').clientHeight;
+    //
+    // if(two > one && window.innerWidth){
+    //     document.getElementById('textOne').style = "padding-bottom: 22px;";
+    // }else {
+    //     document.getElementById('textOne').style = "padding-bottom: 0px;";
+    // }
+}
 
 
 /**
@@ -284,6 +302,7 @@ function checkLanguage(item){
     }
 
     translateMenuItems(); // separete translating of menu items
+    checkDivsHeight();
 };
 
 
@@ -333,7 +352,6 @@ function toggleMenu(item){
     if(window.innerWidth <= 850 && item === 'close'){
         document.getElementById('menuItemsBigScreen').style.height = 0;
         if(window.scrollY < 60){
-            console.log("THERE");
             if(page === 'main' || page === 'aboutus'){
 
                 document.getElementById('menu').classList.remove('scrollOver');
@@ -491,8 +509,6 @@ function returnInputBottomBorder(item){
 function scrollDown(){
     var currentYPosition = window.scrollY;
     var toScroll = 574 - currentYPosition;
-
-    console.log(window.scrollY);
 
     window.scrollBy({
         top: toScroll,

@@ -1,0 +1,78 @@
+
+
+.textOneDark {
+    font-family: 'Roboto', serif;
+    font-size: 32px !important;
+    color: #fff !important;
+    opacity: 1;
+}
+
+
+.textTwoDark {
+    font-family: 'Roboto', serif;
+    font-size: 20px !important;
+    color: #fff !important;
+    opacity: 0.84;
+}
+
+
+.textThreeDark {
+    font-family: 'Roboto Mono', serif;
+    font-size: 16px !important;
+    color: #fff !important;
+    opacity: 0.54;
+}
+
+
+.textFourDark {
+    font-family: 'Roboto Mono', serif;
+    font-size: 20px !important;
+    color: #fff !important;
+    opacity: 0.84;
+}
+
+
+
+.textOneLight {
+    font-family: 'Roboto', serif;
+    font-size: 32px !important;
+    color: #000 !important;
+    opacity: 0.84;
+    line-height: 1em;
+}
+
+.textTwoLight {
+    font-family: 'Roboto', serif;
+    font-size: 20px !important;
+    color: #000 !important;
+    opacity: 0.84;
+}
+
+.textThreeLight {
+    font-family: 'Roboto Mono', serif;
+    font-size: 16px !important;
+    color: #000 !important;
+    opacity: 0.54;
+}
+
+.textFourLight {
+    font-family: 'Roboto Mono', serif;
+    font-size: 20px !important;
+    color: #000 !important;
+    opacity: 0.54;
+}
+
+.textFiveLight {
+    font-family: 'Roboto Mono', serif;
+    font-size: 20px !important;
+    color: #000;
+    opacity: 0.84;
+}
+
+
+.textLinks {
+    font-family: 'Roboto', serif;
+    font-size: 15px !important;
+    color: #fff !important;
+    opacity: 0.84;
+}
