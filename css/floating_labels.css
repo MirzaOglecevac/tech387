@@ -13,7 +13,7 @@ input, textarea               {                           /* This styles the act
     outline: none;
     border: none;
     border-bottom: 2px solid rgba(180,180,180, 0.5);
-    margin-bottom: 20px !important;
+    margin-bottom: 25px !important;
 }
 
 label                {                      /* This styles the label before interaction */

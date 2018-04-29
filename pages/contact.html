@@ -14,12 +14,12 @@
 
             <div class="section" id="sectionTwo">
                 <div id="sectionTwoText">
-                    <p class="heading data" id="secondHeading"> About us </p>
-                    <p class="subheading data" id="secondSubheading">
-                        Our core values are ambition, unity, impartiality, integrity, flexibility, punctuality and a will to work and improve ourselves.
+                    <p class="heading data textOneLight" id="secondHeading"> About us </p>
+                    <p class="subheading data textTwoLight" id="secondSubheading">
+                        Our core values are ambition, unity and flexibility.
                     </p>
-                    <p class="text data" id="secondText">
-                        Tech387 was founded with an ambition to develop the most demanding and ambitious software projects of the 21st century. The members of our team are young, creative and ambitious professionals whose motivated work approach inspires innovation and change.
+                    <p class="text data textThreeLight" id="secondText">
+                        Tech387 was founded with an ambition to develop the most demanding and ambitious software projects of the 21st century.
                     </p>
                 </div>
             </div>
@@ -27,46 +27,72 @@
             <!-- SECTION FOUR ABOUT -->
             <div class="section" id="sectionFourA">
                 <div id="leftContainer">
+
+
                     <div id="ourSocialLinks">
+
                         <div>
-                            <span id="facebook" onclick="openLink(this)">
-                            <div class="icons" style="
-                                 width: 20px;
-                                 height: 20px;
-                                 background-color: #3B5998;
-                                 -webkit-mask-image: url('assets/facebook.svg');
-                                 -webkit-mask-size: 20px;">
-                            </div>
-                            FACEBOOK</span>
 
+                            <a href="https://www.facebook.com/tech387/" target="_blank">
+                                <button class="mdl-button mdl-js-button androidButton ripple">
+                                    <div style="
+                                            width: 18px;
+                                            height: 18px;
+                                            background-color: 	#385998;
+                                             -webkit-mask-image: url('assets/facebook.svg');
+                                             -webkit-mask-size: 18px;">
+                                    </div>
+                                    <span id="facebook">FACEBOOK</span>
+                                </button>
+                            </a>
 
-                            <span id="medium" onclick="openLink(this)"><div class="icons" style="
-                                     width: 20px;
-                                     height: 20px;
-                                     background-color: #333;
-                                     -webkit-mask-image: url('assets/medium.svg');
-                                     -webkit-mask-size: 20px;">
-                         </div>MEDIUM</span>
+                            <a id="medium" href="https://medium.com/@TECH387" target="_blank">
+                                <button class="mdl-button mdl-js-button androidButton ripple">
+                                    <div style="
+                                            width: 18px;
+                                            height: 18px;
+                                            background-color: 	#1c1c1c;
+                                             -webkit-mask-image: url('assets/medium.svg');
+                                             -webkit-mask-size: 18px;">
+                                    </div>
+                                    <span>MEDIUM</span>
+                                </button>
+                            </a>
+
                         </div>
 
                         <div>
-                            <span id="instagram" onclick="openLink(this)"><div class="icons" style="
-                                     width: 20px;
-                                     height: 20px;
-                                     background-color: #333;
-                                     -webkit-mask-image: url('assets/instagram.svg');
-                                     -webkit-mask-size: 20px;">
-                         </div>INSTAGRAM</span>
 
-                            <span id="linkedin" onclick="openLink(this)"><div class="icons" style="
-                                     width: 20px;
-                                     height: 20px;
-                                     background-color: #4875B4;
-                                     -webkit-mask-image: url('assets/linkedin.svg');
-                                     -webkit-mask-size: 20px;">
-                         </div>LINKED IN</span>
+                            <a href="https://www.linkedin.com/company/tech-387" target="_blank">
+                                <button class="mdl-button mdl-js-button androidButton ripple">
+                                    <div style="
+                                            width: 18px;
+                                            height: 18px;
+                                            background-color: 	#1c1c1c;
+                                             -webkit-mask-image: url('assets/instagram.svg');
+                                             -webkit-mask-size: 18px;">
+                                    </div>
+                                    <span>INSTAGRAM</span>
+                                </button>
+                            </a>
+
+                            <a href="https://www.linkedin.com/company/tech-387" target="_blank">
+                                <button class="mdl-button mdl-js-button androidButton ripple">
+                                    <div style="
+                                            width: 18px;
+                                            height: 18px;
+                                            background-color: 	#487584;
+                                             -webkit-mask-image: url('assets/linkedin.svg');
+                                             -webkit-mask-size: 18px;">
+                                    </div>
+                                    <span id="linkedin">LINKED IN</span>
+                                </button>
+                            </a>
+
                         </div>
+
                     </div>
+
                 </div>
             </div>
 
@@ -79,8 +105,8 @@
             <div id="formContainer">
                 <div id="form">
 
-                    <p class="data primary"> Let’s start our work relationship </p>
-                    <p class="data primary"> Leave A Message </p>
+                    <p class="data textTwoLight primary"> Let’s start our work relationship </p>
+                    <p class="data textThreeLight primary"> Leave A Message </p>
 
                     <br/>
                     <form class="primary">
@@ -108,7 +134,7 @@
                     <div id="second" class="secundary">
                         <p class="data"> Data successfully sended </p>
                         <!--<p id="backButton" class="data textFiveLight" onclick="returnToTheForm()"> Return </p>-->
-                        <button id="backButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored riple" onclick="returnToTheForm()">
+                        <button id="backButton" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored riple data" onclick="returnToTheForm()">
                             Return
                         </button>
                     </div>

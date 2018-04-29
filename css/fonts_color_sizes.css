@@ -1,10 +1,11 @@
 
 
 .textOneDark {
-    font-family: 'Roboto', serif;
-    font-size: 32px !important;
+    font-family: 'Roboto', serif !important;
+    font-size: 36px !important;
     color: #fff !important;
     opacity: 1;
+    padding: 8px !important;
 }
 
 
@@ -13,6 +14,8 @@
     font-size: 20px !important;
     color: #fff !important;
     opacity: 1;
+    padding: 8px 5px !important;
+    margin: 0 auto !important;
 }
 
 
@@ -21,6 +24,8 @@
     font-size: 16px !important;
     color: #fff !important;
     opacity: 0.84;
+    padding: 8px 5px !important;
+    margin: 0 auto !important;
 }
 
 
@@ -29,6 +34,8 @@
     font-size: 20px !important;
     color: #fff !important;
     opacity: 0.84;
+    padding: 8px 5px !important;
+    margin: 0 auto !important;
 }
 
 
@@ -38,7 +45,9 @@
     font-size: 32px !important;
     color: #000 !important;
     opacity: 0.84;
-    line-height: 1em;
+    line-height: 1.2em;
+    padding: 8px !important;
+    text-indent: -1px;
 }
 
 .textTwoLight {
@@ -46,6 +55,8 @@
     font-size: 20px !important;
     color: #000 !important;
     opacity: 0.84;
+    padding: 8px 5px !important;
+    margin: 0 auto;
 }
 
 .textThreeLight {
@@ -53,6 +64,8 @@
     font-size: 16px !important;
     color: #000 !important;
     opacity: 0.54;
+    padding: 8px 5px !important;
+    margin: 0 auto !important;
 }
 
 .textFourLight {
@@ -60,6 +73,8 @@
     font-size: 20px !important;
     color: #000 !important;
     opacity: 0.54;
+    padding: 8px 5px !important;
+    margin: 0 auto !important;
 }
 
 .textFiveLight {
@@ -67,6 +82,8 @@
     font-size: 20px !important;
     color: #000;
     opacity: 0.84;
+    padding: 8px 5px !important;
+    margin: 0 auto !important;
 }
 
 

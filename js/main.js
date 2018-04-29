@@ -1,7 +1,108 @@
+/**
+ * Function for obtaining current geo location via Google map
+ */
+function myMap() {
+
+    console.log("MY MAP");
+
+    var myLatlng = new google.maps.LatLng(43.85627151, 18.41263015);
+    var mapOptions = {
+        center: new google.maps.LatLng(43.85627151, 18.41263015),
+        zoom: 18,
+        //mapTypeId: google.maps.MapTypeId.HYBRID
+        mapTypeId: 'terrain',
+        styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+                featureType: 'administrative.locality',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#d59563'}]
+            },
+            {
+                featureType: 'poi',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#d59563'}]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'geometry',
+                stylers: [{color: '#263c3f'}]
+            },
+            {
+                featureType: 'poi.park',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#6b9a76'}]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry',
+                stylers: [{color: '#38414e'}]
+            },
+            {
+                featureType: 'road',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#212a37'}]
+            },
+            {
+                featureType: 'road',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#9ca5b3'}]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry',
+                stylers: [{color: '#746855'}]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'geometry.stroke',
+                stylers: [{color: '#1f2835'}]
+            },
+            {
+                featureType: 'road.highway',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#f3d19c'}]
+            },
+            {
+                featureType: 'transit',
+                elementType: 'geometry',
+                stylers: [{color: '#2f3948'}]
+            },
+            {
+                featureType: 'transit.station',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#d59563'}]
+            },
+            {
+                featureType: 'water',
+                elementType: 'geometry',
+                stylers: [{color: '#17263c'}]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.text.fill',
+                stylers: [{color: '#515c6d'}]
+            },
+            {
+                featureType: 'water',
+                elementType: 'labels.text.stroke',
+                stylers: [{color: '#17263c'}]
+            }
+        ]
+    };
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    //map.setMapTypeId('terrain');
 
 
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        title:"Tech387"
+    });
 
-
+    marker.setMap(map);
+}
 
 
 // PROPERTIES
@@ -80,9 +181,7 @@ function sendContactData(){
         });
 
 
-
         for(var i = 0; i < document.getElementsByClassName('primary').length; i++){
-            console.log("inside");
             document.getElementsByClassName('primary')[i].style = "display: none;";
         }
 
@@ -175,19 +274,26 @@ window.addEventListener('resize', function(){
         }
         changeItemsAppearence(clickedMenuItem);
     }else {
+        toggleMenu('close');
         changeItemsAppearence(clickedMenuItem);
     }
 });
 
 function checkDivsHeight(){
-    // var one = document.getElementById('textOne').clientHeight;
-    // var two = document.getElementById('textTwo').clientHeight;
-    //
-    // if(two > one && window.innerWidth){
-    //     document.getElementById('textOne').style = "padding-bottom: 22px;";
-    // }else {
-    //     document.getElementById('textOne').style = "padding-bottom: 0px;";
-    // }
+
+    if(!document.getElementById('textOne')){
+        return;
+    }
+
+
+    var one = document.getElementById('textOne').clientHeight;
+    var two = document.getElementById('textTwo').clientHeight;
+
+    if(two > one && window.innerWidth){
+        document.getElementById('textOne').style = "padding-bottom: 22px;";
+    }else {
+        document.getElementById('textOne').style = "padding-bottom: 0px;";
+    }
 }
 
 
@@ -239,19 +345,64 @@ function changeItemsAppearence(item){
 
         if(item === menuItems[i]){
 
-            if((menuItems[i] === 'main' || menuItems[i] === 'aboutus') && width > 850){
-                document.getElementById(menuItems[i]).style = "background-color: #1c1c1c; color: #fff";
-            }else {
-                document.getElementById(menuItems[i]).style = "background-color: #fff; color: #1c1c1c";
-            }
+            document.getElementById(menuItems[i]).style = "background-color: #000; color: #fff; opacity: 1;";
+
+            // if((menuItems[i] === 'main' || menuItems[i] === 'aboutus') && width > 850){
+            //     document.getElementById(menuItems[i]).style = "background-color: #1c1c1c; color: #fff; opacity: 1;";
+            // }else {
+            //     document.getElementById(menuItems[i]).style = "background-color: #fff; color: #1c1c1c";
+            // }
+
         }else {
-            document.getElementById(menuItems[i]).style = "background-color: #transparent; color: #fff";
+            document.getElementById(menuItems[i]).style = "background-color: transparent; color: #fff; opacity: 0.84";
             document.getElementById(menuItems[i]).classList.remove('firstTwo');
         }
 
     }
 
 }
+
+
+
+
+function hoverMenuItems(item){
+
+    if(window.innerWidth < 850){
+        return;
+    }else {
+
+        document.getElementById(item.id).style = 'background-color: #1c1c1c; color: #fff; opacity: 1';
+
+        // if((clickedMenuItem === 'main' || clickedMenuItem === 'aboutus') && window.scrollY < 60){
+        //     document.getElementById(item.id).style = 'background-color: #1c1c1c; color: #fff;';
+        // }else {
+        //     document.getElementById(item.id).style = 'background-color: #000; color: #111; opacity: 0.84';
+        // }
+    }
+
+}
+
+function dishoverMenuItems(item){
+    if(window.innerWidth < 850){
+        return;
+    }else {
+        if((clickedMenuItem === 'main' || clickedMenuItem === 'aboutus') && window.scrollY < 60){
+            if(item.id === clickedMenuItem){
+                return;
+            }else {
+                document.getElementById(item.id).style = 'background-color: transparent; color: #fff;';
+            }
+        }else {
+            if(item.id === clickedMenuItem){
+                return;
+            }else {
+                document.getElementById(item.id).style = 'background-color: #1c1c1c; color: #fff; opacity: 0.84';
+            }
+
+        }
+    }
+}
+
 
 
 /**
@@ -302,7 +453,7 @@ function checkLanguage(item){
     }
 
     translateMenuItems(); // separete translating of menu items
-    checkDivsHeight();
+    //checkDivsHeight();
 };
 
 
